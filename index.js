@@ -3,6 +3,8 @@ let vitorias = 20;
 let saldoGame = vitorias - derrotas;
 
 function gameSet(vitorias, derrotas) {
+    let saldoGame = vitorias - derrotas;
+
     if(vitorias < 10){
         console.log(`O Herói tem de saldo de ${saldoGame}  está no nível de Ferro`)
     }else if(vitorias >= 11 && vitorias <= 20){
@@ -18,8 +20,6 @@ function gameSet(vitorias, derrotas) {
     }else{
         console.log("ERROR")
     }
-
-    return resultdoFinal = saldoGame
 }
 
-console.log(gameSet())
+gameSet(vitorias, derrotas);
